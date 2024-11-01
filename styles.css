@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  color: #333333; /* Texto gris oscuro */
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_nav {
+  position: relative;
+}
+
+.rrss {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  position: absolute;
+  top: 2rem;
+  left: 20rem;
+  z-index: 2;
+}
+
+.color_rrss {
+  color: #fff;
+  font-size: 2rem;
+}
+.color_rrss:hover {
+  color: #51cdbe;
+  transform: scale(1.2);
+}
+.hero img {
+  width: 100vw;
+  height: 80vh;
+  filter: brightness(40%);
+}
+
+.hero_content {
+  width: 30%;
+  height: 25rem;
+  background: rgba(60, 60, 60, 0.221);
+  position: absolute;
+  top: 24%;
+  left: 15rem;
+  transition: all 0.3s;
+}
+
+.hero_content:hover {
+  transform: rotate(360deg);
+}
+
+.hero_content h2 {
+  color: rgb(244, 231, 231);
+  padding-top: 5rem;
+  padding-left: 3rem;
+  font-size: 4.5rem;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.hero_content h1 {
+  color: whitesmoke;
+  padding-left: 3rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.hero_content p {
+  color: whitesmoke;
+  font-size: 1.8rem;
+  padding-left: 3rem;
+  letter-spacing: 0.3rem;
+}
+.menu_nav {
+  width: 100vw;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 3px 5px rgb(240, 240, 240);
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 3.5rem;
+  list-style: none;
+}
+.menu li a:link,
+.menu li a:visited {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu li a:active,
+.menu li a:hover {
+  color: #51cdbe;
+}
+.menu_active {
+  color: #51cdbe;
+}
+.active {
+  display: none;
+}
+
+.name_hero > h2 {
+  text-align: center;
+  font-weight: 200;
+}
+.name_hero > h3 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #868686;
+}
+.img_header {
+  border-radius: 50%;
+  border: 0.5rem solid #51cdbe;
+  width: 17rem;
+  height: 17rem;
+  position: absolute;
+  top: -5rem;
+}
+
+/*about section */
+
+.about {
+  width: 100vw;
+  height: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.about article {
+  border-right: 1px solid #ebebeb;
+  width: 33%;
+  padding-left: 5rem;
+}
+
+.about article:last-of-type {
+  border: none;
+}
+.about_header h2 {
+  width: 100%;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 100;
+  padding-top: 7rem;
+  color: rgb(56, 55, 55);
+}
+
+.about_header hr {
+  width: 2rem;
+  margin: 0.7px 0 5rem 0;
+  border: 1px #51cdbe solid;
+}
+.about h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 2rem 4rem 2rem 0;
+}
+
+.about p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #868686;
+  padding: 0 4rem 2rem 0;
+}
+
+.btn_cv {
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 3px;
+  background: transparent;
+  border: #51cdbe 1px solid;
+  color: #51cdbe;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+/* MEDIAS QUERIES*/
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero img {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .hero_content {
+    position: absolute;
+    top: 28%;
+    left: 5rem;
+  }
+  .hero_content h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero_content h1 {
+    color: whitesmoke;
+    font-size: 8rem;
+    font-weight: 500;
+  }
+
+  .hero_content p {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+  .img_header {
+    display: none;
+  }
+
+  .about {
+    width: 100vw; /* Usa el ancho total de la ventana */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: flex-start; /* Alinea los items al inicio (izquierda) */
+    justify-content: flex-start; /* Alinea los items al inicio (arriba) */
+    padding: 1rem; /* Agrega un poco de padding opcional */
+  }
+  .about article {
+    width: 100%; /* Asegúrate de que los artículos ocupen todo el ancho */
+    margin-bottom: 2rem; /* Espaciado entre los artículos */
+    border: 1px solid #ebebeb;
+  }
+  .about article:last-of-type {
+    border: 1px solid #ebebeb;
+  }
+}
