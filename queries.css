@@ -1,0 +1,106 @@
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero img {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .hero_content {
+    position: absolute;
+    top: 28%;
+    left: 5rem;
+  }
+  .hero_content h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero_content h1 {
+    color: whitesmoke;
+    font-size: 8rem;
+    font-weight: 500;
+  }
+
+  .hero_content p {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+  .img_header {
+    display: none;
+  }
+
+  .about {
+    width: 100vw; /* Usa el ancho total de la ventana */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: flex-start; /* Alinea los items al inicio (izquierda) */
+    justify-content: flex-start; /* Alinea los items al inicio (arriba) */
+    padding: 1rem; /* Agrega un poco de padding opcional */
+  }
+  .about article {
+    width: 100%; /* Asegúrate de que los artículos ocupen todo el ancho */
+    margin-bottom: 2rem; /* Espaciado entre los artículos */
+    border: 1px solid #ebebeb;
+  }
+  .about article:last-of-type {
+    border: 1px solid #ebebeb;
+  }
+  .resume {
+    width: 100vw;
+  }
+  .resume > h2 {
+    padding-left: 5rem;
+  }
+  .item {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    height: auto;
+    margin-left: 3rem;
+    margin-right: 5rem;
+  }
+  .item_skills {
+    width: 100%;
+    border: none;
+    height: auto;
+    margin: 0;
+    padding-left: 3rem;
+    padding-right: 5rem;
+  }
+  .language {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+  }
+
+  .en_70 {
+    top: 17.9rem;
+  }
+  .fr_10 {
+    top: 23.75rem;
+  }
+  .hyc_60 {
+    top: 12.07rem;
+  }
+  .js_40 {
+    width: 40%;
+    border: 5px solid #f4ae5e;
+    border-radius: 5rem 0 0 5rem;
+    position: absolute;
+    top: 17.9rem;
+  }
+  .react_40 {
+    top: 23.7rem;
+  }
+  .nd_30 {
+    top: 29.55rem;
+  }
+  .psql_30 {
+    top: 35.3rem;
+  }
+  .stats {
+    margin: 0;
+  }
+}

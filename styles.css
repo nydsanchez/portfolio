@@ -256,10 +256,10 @@ hr {
 }
 
 .resume_hr {
-  margin-bottom: 2rem;
+  margin-bottom: 1.4rem;
 }
 .item h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 
@@ -367,111 +367,135 @@ hr {
   justify-content: space-around;
   align-items: center;
 }
-/* MEDIAS QUERIES*/
 
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-
-  .hero img {
-    width: 100vw;
-    height: 70vh;
-  }
-
-  .hero_content {
-    position: absolute;
-    top: 28%;
-    left: 5rem;
-  }
-  .hero_content h2 {
-    font-size: 3.5rem;
-  }
-
-  .hero_content h1 {
-    color: whitesmoke;
-    font-size: 8rem;
-    font-weight: 500;
-  }
-
-  .hero_content p {
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-  }
-  .img_header {
-    display: none;
-  }
-
-  .about {
-    width: 100vw; /* Usa el ancho total de la ventana */
-    height: auto; /* Deja que la altura se ajuste automáticamente */
-    display: flex; /* Activa Flexbox */
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: flex-start; /* Alinea los items al inicio (izquierda) */
-    justify-content: flex-start; /* Alinea los items al inicio (arriba) */
-    padding: 1rem; /* Agrega un poco de padding opcional */
-  }
-  .about article {
-    width: 100%; /* Asegúrate de que los artículos ocupen todo el ancho */
-    margin-bottom: 2rem; /* Espaciado entre los artículos */
-    border: 1px solid #ebebeb;
-  }
-  .about article:last-of-type {
-    border: 1px solid #ebebeb;
-  }
-  .resume {
-    width: 100vw;
-  }
-  .resume > h2 {
-    padding-left: 5rem;
-  }
-  .item {
-    width: 100%;
-    border: 1px solid #ebebeb;
-    height: auto;
-    margin-left: 3rem;
-    margin-right: 5rem;
-  }
-  .item_skills {
-    width: 100%;
-    border: none;
-    height: auto;
-    margin: 0;
-    padding-left: 3rem;
-    padding-right: 5rem;
-  }
-  .language {
-    position: relative;
-    top: 0rem;
-    left: 0rem;
-  }
-
-  .en_70 {
-    top: 17.9rem;
-  }
-  .fr_10 {
-    top: 23.75rem;
-  }
-  .hyc_60 {
-    top: 12.07rem;
-  }
-  .js_40 {
-    width: 40%;
-    border: 5px solid #f4ae5e;
-    border-radius: 5rem 0 0 5rem;
-    position: absolute;
-    top: 17.9rem;
-  }
-  .react_40 {
-    top: 23.7rem;
-  }
-  .nd_30 {
-    top: 29.55rem;
-  }
-  .psql_30 {
-    top: 35.3rem;
-  }
-  .stats {
-    margin: 0;
-  }
+.stats p {
+  font-size: 5rem;
+  color: #fff;
 }
+
+.stats span {
+  font-size: 1.5rem;
+  color: #868686;
+}
+/*SERVICES SECTION*/
+.services {
+  width: 100vw;
+  padding: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.services h2 {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.services div {
+  width: 30%;
+}
+.services p {
+  font-size: 1.5rem;
+}
+.services h2,
+.services div {
+  padding-left: 5rem;
+}
+
+/* CONTACTO SECTION */
+.contacto {
+  display: flex;
+  position: relative;
+}
+
+.google_map {
+  filter: brightness(50%);
+}
+form {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+  background: white;
+  padding: 7rem 7rem 7rem 4rem;
+  gap: 2rem;
+  border-radius: 3rem;
+  align-items: center;
+}
+
+form h2 {
+  font-size: 2rem;
+  color: #7b7979;
+}
+
+form input {
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+form textarea {
+  border-radius: 1rem;
+  border: 1px solid #ebebeb;
+}
+
+form button {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  background: #51cdbe;
+  color: white;
+  text-transform: uppercase;
+}
+.contact_address {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  top: 2.5rem;
+  right: 5rem;
+  padding: 7rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: #7b7979;
+  box-shadow: 0 0.5rem 3px rgba(60, 60, 60, 0.221);
+}
+
+.contact_address h3 {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.contact_address ul {
+  list-style: none;
+}
+.contact_address ul li {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.contact_address nav ul {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.contact_address nav ul li {
+  font-size: 2rem;
+  color: #51cdbe;
+}
+/* FOOTER */
+
+footer {
+  height: 5rem;
+  background: #a3e0db;
+  text-align: center;
+  line-height: 4;
+}
+/* MEDIAS QUERIES*/
