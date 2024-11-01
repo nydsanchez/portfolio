@@ -3,6 +3,10 @@
     font-size: 50%;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .hero img {
     width: 100vw;
     height: 70vh;
