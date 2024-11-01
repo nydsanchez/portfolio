@@ -409,6 +409,8 @@ hr {
 
 .google_map {
   filter: brightness(50%);
+  width: 100vw;
+  height: auto;
 }
 form {
   display: flex;
