@@ -19,6 +19,7 @@ header {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .header_nav {
@@ -158,6 +159,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   border-bottom: 1px solid #ebebeb;
+  padding-top: 7rem;
 }
 
 .about article {
@@ -169,6 +171,7 @@ header {
 .about article:last-of-type {
   border: none;
 }
+
 .about_header h2 {
   width: 100%;
   font-size: 2.5rem;
@@ -176,6 +179,7 @@ header {
   font-weight: 100;
   padding-top: 7rem;
   color: rgb(56, 55, 55);
+  padding-bottom: 0;
 }
 
 hr {
@@ -186,7 +190,7 @@ hr {
 .about h3 {
   font-size: 2rem;
   font-weight: 400;
-  padding: 2rem 4rem 2rem 0;
+  padding: 0 4rem 2rem 0;
 }
 
 .about p {
