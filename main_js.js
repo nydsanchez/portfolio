@@ -1,6 +1,6 @@
-function checkMainPosition() {
+/* function checkMainPosition() {
   const main_about = document.querySelector(".about");
-  const rrss = document.querySelector(".header_nav");
+  //const rrss = document.querySelector(".header_nav");
   const hero = document.querySelector(".hero");
   const img = document.querySelector(".img_header");
   const title = document.querySelector(".active");
@@ -12,8 +12,8 @@ function checkMainPosition() {
   // Si la parte superior de main está en la parte superior de la pantalla
   if (rect.top <= 2) {
     // Ocultar el elemento con la clase massiel
-    if (rrss && hero && img) {
-      rrss.style.display = "none";
+    if (hero && img) {
+      // rrss.style.display = "none";
       hero.style.display = "none";
       img.style.display = "none";
       title.style.display = "inline-block";
@@ -23,8 +23,8 @@ function checkMainPosition() {
     }
   } else {
     // Si no está en el top, asegurarse de que sea visible
-    if (rrss && hero && img) {
-      rrss.style.display = "";
+    if (hero && img) {
+      // rrss.style.display = "";
       hero.style.display = "";
       img.style.display = "";
       title.style.display = "none";
@@ -38,3 +38,4 @@ window.addEventListener("scroll", checkMainPosition);
 
 // Llamar a la función al cargar la página por si ya está en el top
 checkMainPosition();
+ */
